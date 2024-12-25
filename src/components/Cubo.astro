@@ -1,0 +1,60 @@
+<form id="Calculadora">
+    <div class="form-container">
+        <h2>Calcular Volumen de un Cubo</h2>
+        <form id="cubeForm">
+            <label for="sideCubo">Lado (cm):</label>
+            <input type="number" id="sideCubo" name="sideCubo" min="0" step="0.01" required>
+            <button type="button" id="calculateButtonCubo">Calcular</button>
+        </form>
+        <div class="result" id="resultCubo"></div>
+    </div>
+</form>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    .form-container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .form-container label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-container input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-container button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .form-container button:hover {
+        background-color: #45a049;
+    }
+
+    .result {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+</style>
+
+<script src="/js/cubo.js" is:inline></script>
